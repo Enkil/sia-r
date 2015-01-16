@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Главная | Российская ассоциация специалистов по хирургическим инфекциям - РАСХИ</title>
+	<title>Главная | Российская Ассоциация специалистов по хирургическим Инфекциям - РАСХИ</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="common">
 	
+	<!-- HEADER -->
+	<header class="page-header">
+		<div class="page-header__wrapper">
+			<div class="container page-header__margin-top">
+				<div class="row">
+
+
+					<div class="col-wide"> <!-- left column -->
+
+						<div class="page-header__lead"> <!-- logo and organisation name -->
+							
+							<a href="index.html" class="page-header__logo">
+								<img src="img/rashi-logo.png" alt="РАСХИ логотип. Ссылка на главную страницу" title="РАСХИ">
+							</a>
+
+							<div class="page-header__orgname">
+								<p class="page-header__orgname--big">Российская Ассоциация</p>
+								<p class="page-header__orgname--small">Специалистов по Хирургическим Инфекциям</p>
+							</div>
+						</div>
+
+						<nav class="page-header__menu"> <!-- menu-->
+							<ul class="page-header__links">
+								<li class="page-header__item page-header__item--active"><a href="index.html" class="page-header__link page-header__link--active">Главная</a></li>
+								<li class="page-header__item"><a href="" class="page-header__link">Журнал</a></li>
+								<li class="page-header__item"><a href="" class="page-header__link">Библиотека</a></li>
+								<li class="page-header__item"><a href="" class="page-header__link">Конференции</a></li>
+								<li class="page-header__item"><a href="" class="page-header__link">Контакты</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+					<div class="col-narrow"> <!-- right column -->
+						
+						<div class="page-header__loginform-wrapper">
+							<div class="page-header__loginform"> <!-- Login/Registration form -->
+
+								<a href="#" class="page-header__loginform-registration">Регистрация в РАСХИ</a>
+
+								<form action="#">
+									<input type="text" class="page-header__input" placeholder="Email или логин" required>
+									<input type="password" class="page-header__input" placeholder="Пароль" required>
+									<label class="page-header__label">Запомнить меня<input type="checkbox"></label>
+									<input type="submit" class="page-header__submit" value="Войти">
+								</form>
+
+							</div>
+
+							<div class="page-header__pass-recover"> <!-- Recover password link -->
+								<a href="#" class="link-dark-bg">Забыли пароль?</a>
+							</div>
+						</div>
+
+						<form action="#"> <!-- Search form -->
+							<div class="page-header__search-input-wrapper">
+								<input type="text" class="page-header__search-input" placeholder="Запрос для поиска...">
+							</div>
+							<input type="submit" class="page-header__search-submit" value="Найти">
+						</form>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- / HEADER -->
+
 </body>
 </html>

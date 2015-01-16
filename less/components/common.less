@@ -1,0 +1,47 @@
+// layout
+.common{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	background: #ebf0f2;
+
+	font-family: @font-family;
+}
+
+.container{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.row{
+	overflow: hidden;
+}
+
+.col{
+
+	&-wide{
+		width: @col-wide__width;
+		float: left;
+	}
+
+	&-narrow{
+		width: @col-narrow__width;
+		float: left;
+	}
+}
+
+
+// typography
+
+.link-dark-bg{
+	color: @link-dark-bg__color;
+	font-size: @link-dark-bg__fz;
+	line-height: @link-dark-bg__lh;
+	text-decoration: none;
+
+	&:hover{
+		color: #fff;
+		text-decoration: underline;
+	}
+}
