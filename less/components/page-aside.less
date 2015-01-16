@@ -1,0 +1,38 @@
+.page-aside{
+	background-color: @sidebar__bgc;
+	box-shadow: @sidebar__box-shadow;
+}
+
+.send-tesis{
+	background-color: @send-tesis--bgc;
+	height: @send-tesis--height;
+	text-align: center;
+	position: relative;
+
+	&__btn{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+
+		display: inline-block;
+		color: @send-tesis__btn--color;
+		background-color: @send-tesis__btn--bgc;
+		border-top: @send-tesis__btn--brdrtop;
+		border-bottom: @send-tesis__btn--brdrbot;
+		text-decoration: none;
+		width: @send-tesis__btn--width;
+		height: @send-tesis__btn--height;
+		border-radius: @send-tesis__btn--br;
+		line-height: @send-tesis__btn--height;
+		box-shadow: @send-tesis__btn--bxshdw;
+
+		&:hover{
+			background-color: @send-tesis__btn--bgc-hover;
+			border-top: @send-tesis__btn--brdrtop-hover;
+			border-bottom: @send-tesis__btn--brdrbot-hover;
+		}
+	}
+}
