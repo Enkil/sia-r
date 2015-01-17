@@ -3,11 +3,31 @@
 	height: 1000px;
 
 	&__banner{
-		padding: @index__banner--padding;
+		// padding: @index__global--padding;
+		margin: @index__global--margin;
 
 		&-img{
 			width: @index__banner-img--width;
 			height: @index__banner-img--height;
 		}
 	}
+
+	&__about{
+		// padding: @index__global--padding;
+		margin: @index__global--margin;
+		
+		&-left{
+			float: left;
+			width: 160px;
+			display: inline-block;
+		}
+		&-right{
+			float: left;
+			width: 500px;
+			display: inline-block;
+		}
+
+	}
+
+
 }
