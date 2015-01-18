@@ -1,5 +1,4 @@
-.index{
-	background-color: #fff;
+.index-lead{
 
 	&__banner{
 		// padding: @index__global--padding;
@@ -38,7 +37,7 @@
 	overflow: hidden;
 	padding: 35px 20px 40px 15px;
 	box-shadow: 
-		0px 0px 7px 0px rgba(0,0,0,.3);
+		@content__box-shadow;
 
 	&__img{
 		width: 100px;
@@ -62,14 +61,13 @@
 		}
 	}
 
-// columns for workers cards
-	&__col{
-		width: 50%;
-		float: left;
+	&:hover{
+		background-color: #F6F8F9;
+		box-shadow: @content__box-shadow--hover;
 	}
 }
 
-// worker cards in colums
+// workers cards in colums
 .worker-card-in-col{
 	margin: @index__worker--margin;
 	margin-left: 30px;
@@ -81,7 +79,7 @@
 	overflow: hidden;
 	padding: 35px 20px 40px 15px;
 	box-shadow: 
-		0px 0px 7px 0px rgba(0,0,0,.3);	
+		@content__box-shadow;	
 
 
 	&:nth-child(odd){
@@ -117,5 +115,11 @@
 
 	&__col{
 		width: 50%;
+	}
+
+	&:hover{
+		background-color: #F6F8F9;
+		box-shadow: 
+			@content__box-shadow--hover;
 	}
 }
