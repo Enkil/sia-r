@@ -8,6 +8,7 @@
 .main{
 	background-color: #fff;
 	padding-bottom: 60px;
+	min-height: 1000px;
 }
 
 .common{
@@ -22,6 +23,7 @@
 
 .row{
 	overflow: hidden;
+	position: relative; // for fixed position of search form in header
 
 	// for bgc in aside when hqight is dinamic
 	&__wrapper-bg{
@@ -95,4 +97,15 @@
 	color: #393a42;
 	font-weight: normal;
 	font-size: 13px;
+}
+
+.text-dark-bg{
+	color: #fff;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 21px;
+
+	&--bold{
+		font-weight: bold;
+	}
 }
