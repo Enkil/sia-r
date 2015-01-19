@@ -47,6 +47,11 @@
 	}
 }
 
+.page-lead{
+	margin: 30px 50px 40px 50px;
+	overflow: hidden;
+}
+
 
 // typography
 
@@ -68,10 +73,16 @@
 	margin-bottom: 20px;
 }
 
+.page-lead__hr{
+	color: #cccccc;
+	margin-top: 25px;
+}
+
 .h2-red{
 	color: #a55b65;
 	font-weight: bold;
 	font-size: 11px;
+	text-transform: uppercase;
 }
 
 .h2-black{
@@ -109,5 +120,40 @@
 
 	&--bold{
 		font-weight: bold;
+	}
+}
+
+
+// elements
+
+.pagination{
+	text-align: center;
+
+	&__item{
+		display: inline-block;
+	}
+
+	&__link{
+		display: inline-block;
+		text-decoration: none;
+		width: 20px;
+		height: 20px;
+		background-color: #f6f8f9;
+		color: #333333;
+		font-size: 10px;
+		line-height: 20px;
+
+		&--arrow{
+			width: 30px;
+		}
+		
+		&--active{
+			color: #af4077;
+		}		
+
+		&:hover{
+			background-color: #af4077;
+			color: #fff;
+		}
 	}
 }
