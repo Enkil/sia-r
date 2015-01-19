@@ -79,24 +79,81 @@
 					<hr class="page-lead__hr">
 				</div>
 
-				<div class="page-content">
+				<div class="page-content text">
+					<p class="paragraph">
 					Журнал «Инфекции в хирургии» входит в перечень рецинзируемых изданий, рекомендованных ВАК для опубликования основных научных результатов диссертаций на соискание ученой степени доктора и кандидата наук.
-					Индекс в общероссийском каталоге: 29099
+					</p>
 
-					Главные редакторы:
-					И.А. Ерюхин - член-корр. РАМН, д.м.н., профессор
-					Б.Р. Гельфанд - член-корр. РАМН, д.м.н., профессор
-					Заместители главных редакторов:
-					Н.А. Ефименко - член-корр. РАМН, д.м.н., профессор
-					М.Д. Дибиров - д.м.н., профессор
-					С.А. Шляпников - д.м.н., профессор					
+					<p class="paragraph">Индекс в общероссийском каталоге: 29099</p>
+
+					<p class="paragraph">
+						<strong>Главные редакторы:</strong><br>
+						И.А. Ерюхин - член-корр. РАМН, д.м.н., профессор<br>
+						Б.Р. Гельфанд - член-корр. РАМН, д.м.н., профессор<br>						
+					</p>
+
+					<p class="paragraph">
+						<strong>Заместители главных редакторов:</strong><br>
+						Н.А. Ефименко - член-корр. РАМН, д.м.н., профессор<br>
+						М.Д. Дибиров - д.м.н., профессор<br>
+						С.А. Шляпников - д.м.н., профессор<br>				
+					</p>
+					
 				</div>		
 
 				<div class="page-content"> <!-- Redactors block -->
 					<hr class="hr-2">
 						
+						<a href="#" onclick="openbox('red-collegue'); return false" class="link-in-text link-in-text--dashed">Редакционная коллегия</a>
+						<a href="#" onclick="openbox('red-union'); return false" class="link-in-text link-in-text--dashed">Редакционный совет</a>
+
+						<div class="display-none show-hide" id="red-collegue">
+							<p class="paragraph text">
+								М.С. Алексеев - д.м.н., профессор<br>
+								С.Ф. Багненко - член-корр. РАМН, д.м.н., профессор<br>
+								А.В. Бутров - д.м.н., профессор<br>
+								Е.А.Войновский - член-корр. РАМН, д.м.н., профессор<br>
+								С.Ю. Голубев (ответственный секретарь) к.м.н.<br>
+								Е.Г. Григорьев - член-корр. РАМН, д.м.н., профессор<br>
+								Е.А. Евдокимов - д.м.н., профессор<br>
+								А.А. Еременко - д.м.н., профессор<br>
+								И.И. Затевахин -член-корр. РАМН, д.м.н., профессор<br>
+								Р.С. Козлов - д.м.н., профессор<br>
+								А.Л. Левит - д.м.н., профессор<br>
+								О.Д. Мишнев - д.м.н., профессор<br>
+								В.А. Руднов - д.м.н., профессор<br>
+								А.В. Сажин - д.м.н., профессор<br>
+								А.И. Салтанов - член-корр. РАМН, д.м.н., профессор<br>
+								Д.Н. Проценко (ответственный секретарь) - к.м.н.<br>
+								Л.Е. Цыпин - д.м.н., профессор<br>
+								А.Е. Шестопалов - д.м.н., профессор<br>
+								А.М. Шулутко - д.м.н., профессор<br>
+								Б.К. Шуркалин - д.м.н., профессор<br>
+								С.В. Яковлев - д.м.н., профессор<br>
+								М.Б. Ярустовский - д.м.н., профессор<br>
+							</p>
+						</div>
+
+	
+						<div class="display-none show-hide" id="red-union">
+							Совет
+						</div>						
+
 					<hr class="hr-2">
-				</div>	
+				</div>
+
+
+				<div class="pagination page-content"> <!-- Pagination -->
+					<div class="ul">
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link pagination__link--arrow"><</a></li>
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link pagination__link--active">1</a></li>
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link">2</a></li>
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link">3</a></li>
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link">4</a></li>
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link">5</a></li>
+						<li class="pagination__item"><a href="conferences.html" class="pagination__link pagination__link--arrow">></a></li>
+					</div>
+				</div>				
 
 			</main>
 
@@ -181,6 +238,10 @@
 		</div>
 	</footer>
 	<!-- / FOOTER -->
+
+	<!-- JavaScript -->
+	<script src="js/show-hide.js"></script>	
+	<!-- / JavaScript -->
 
 </body>
 </html>

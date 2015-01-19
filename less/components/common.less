@@ -90,6 +90,18 @@
 	&:visited{
 		color: #7575a7;
 	}
+
+	&--dashed{
+		border-bottom: 1px dashed;
+
+		&:hover{
+			text-decoration: none;
+		}
+
+		&:visited{
+			color: #999;
+		}		
+	}
 }
 
 .hr{
@@ -144,6 +156,7 @@
 	color: #393a42;
 	font-weight: normal;
 	font-size: 13px;
+	line-height: 20px;
 }
 
 .text-dark-bg{
@@ -276,7 +289,6 @@
 	}
 
 	&__submit{
-		// float: right;
 		color: #fff;
 		background-color: #4a59a8;
 		border-top: 1px solid #596ac6;
