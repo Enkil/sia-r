@@ -35,7 +35,7 @@ function toggleItem(event) {
 		}	
 	}
 
-	// Hide all accordion item text blocks
+	// Hide all accordion item text blocks 
 	for ( var i = 0; i < texts.length; i++ ) {
 		texts[i].className = 'js-hide accordionItem__block';
 	}	
@@ -44,10 +44,17 @@ function toggleItem(event) {
 	var toggledLink = this;
 	console.log(toggledLink);	
 
-	// Show text block if it was previously hidden and hide if was visible
+	// Show text block if it was previously hidden and hide if was visible  && texts[i].className != 'accordionItem__block'
 	for ( var i = 0; i < texts.length; i++ ){
-		if ( texts[i].dataset.text == toggledLink.dataset.text && texts[i].className != 'accordionItem__block') {
-			texts[i].className = 'accordionItem__block';
+		if ( texts[i].dataset.text == toggledLink.dataset.text ) {
+			console.log('1 if')
+			if ( texts[i].className == 'accordionItem__block' ) {
+				console.log('2 if');
+				texts[i].className = 'js-hide accordionItem__block';
+			}
+			else{ console.log('else'); texts[i].className = 'accordionItem__block' };
 		}
 	}
 }  
+
+
