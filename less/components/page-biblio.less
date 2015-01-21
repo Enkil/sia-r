@@ -1,8 +1,11 @@
 .biblio{
-	overflow: hidden;
 	position: relative;
 	margin-top: 40px;
 	padding-bottom: 40px;
+	
+	&:last-child:after{
+		border-bottom: none;
+	}
 
 	&:after{
 	    content: '';
@@ -11,25 +14,18 @@
         left: 0px;
         bottom: 0px;
         border-bottom: 1px solid #ccc;
-	}
-
-	&:last-child:after{
-		border-bottom: none;
-		display: none;
-	}		
+	}	
 
 	&__left{
 		width: 90px;
 		margin-right: 18px;
 		float: left;
-
 	}
 
 	&__right{
 		width: 494px;
 		margin-left: 18px;
 		float: left;
-
 	}
 
 	&__img{

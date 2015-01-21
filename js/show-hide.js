@@ -2,59 +2,30 @@
 var links = document.getElementsByClassName('accordionItem__link');
 
 // Find all text blocks
-var texts = document.getElementsByClassName('accordionItem__block')
+var texts = document.getElementsByClassName('accordionItem__text')
 
 // Add event on click to links. Event toggle text block
 for (var i = 0; i < links.length; i++) {
 	var link = links[i];
-	link.onclick = toggleItem;
+    link.addEventListener('click', toggleItem.bind(null, i));
 }
 
-// Hide all accordion item text blocks
-for ( var i = 0; i < texts.length; i++ ) {
-	texts[i].className = 'js-hide accordionItem__block';
+//Hide siblings
+function hideSiblings(el){
+    console.log(texts);
+    for (var i = 0; i < texts.length; i++) {
+        var textBlock = texts[i];
+        if (textBlock.className.search('js-hide') < 0 && textBlock != el) {
+            textBlock.className = textBlock.className + ' js-hide';
+        }
+    }
+};
+
+function toggleCurrent(el){
+    el.className = el.className.search('js-hide') > 0 ? el.className.replace('js-hide','').trim() : el.className + ' js-hide';
 }
 
-
-function toggleItem(event) {
-	
-	// Remove default link-click event
-	event = event || window.event 
-	if (event.preventDefault) {  // if method is
-	event.preventDefault();
-	} 
-	else { // for IE < 9
-		event.returnValue = false;
-	}
-
-	// Grub visible text block
-	for ( var i = 0; i < texts.length; i++ ) {
-		if (texts[i].className == 'accordionItem__block') {
-			var visibleText = texts[i];
-			console.log(visibleText);
-		}	
-	}
-
-	// Hide all accordion item text blocks 
-	for ( var i = 0; i < texts.length; i++ ) {
-		texts[i].className = 'js-hide accordionItem__block';
-	}	
-
-	// Grub toggled link dataset
-	var toggledLink = this;
-	console.log(toggledLink);	
-
-	// Show text block if it was previously hidden and hide if was visible  && texts[i].className != 'accordionItem__block'
-	for ( var i = 0; i < texts.length; i++ ){
-		if ( texts[i].dataset.text == toggledLink.dataset.text ) {
-			console.log('1 if')
-			if ( texts[i].className == 'accordionItem__block' ) {
-				console.log('2 if');
-				texts[i].className = 'js-hide accordionItem__block';
-			}
-			else{ console.log('else'); texts[i].className = 'accordionItem__block' };
-		}
-	}
-}  
-
-
+function toggleItem(i){
+    hideSiblings(texts[i]);
+    toggleCurrent(texts[i]);
+}
