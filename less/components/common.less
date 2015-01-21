@@ -54,6 +54,7 @@
 
 .page-content{
 	margin: 0 50px;
+	overflow: hidden;
 }
 
 
@@ -79,6 +80,7 @@
 	color: #5555ad;
 	text-decoration: none;
 	font-size: 12px;
+	display: inline-block;
 
 	&:hover{
 		color: #6767c1;
@@ -312,6 +314,52 @@
 	}		
 }
 
-.display-none{
+.accordion{
+	display: inline-block;
+	float: left;
+}
+
+.accordionItem{
+
+	&__line{
+		display: inline-block;
+		color: #666699;
+		font-size: 13px;
+		line-height: 20px;
+		float: left;
+	}
+	
+	&__link{
+		color: #666699;
+		font-size: 13px;
+		line-height: 20px;
+		border-bottom: 1px dashed #666699;
+		display: inline-block;
+		text-decoration: none;
+		font-weight: normal;
+		float: left;
+
+		&:hover{
+			cursor: pointer;
+		}
+		&:visited{
+			color: #999999;
+			border-bottom: 1px dashed #999999;
+		}
+	}
+
+	&__block{
+		font-size: 11px;
+		line-height: 20px;
+		color: #333;
+		padding-top: 15px;
+		display: block;
+		clear: left;
+		// float: left;
+	}
+}
+
+.js-hide{
 	display: none;
 }
+
