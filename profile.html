@@ -87,8 +87,8 @@
 
 				<div class="page-content"> <!-- Page content text -->
 
-					<p class="">* Логин (изменить логин нельзя)</p>
-					<span>a.iivanov</span>
+					<p class="profile__login-lead">* Логин (изменить логин нельзя)</p>
+					<span class="profile__login">a.iivanov</span>
 
 					<form action="#"> <!-- Registration form -->
 
@@ -157,6 +157,23 @@
 							<img src="img/capcha.jpg" alt="" class="forms__capcha-img">
 							<span class="forms__label-text">Введите код с изображения:</span>
 						</label>
+
+						<fieldset class="forms__fieldset">
+							<legend class="forms__fieldset-legend">Смена пароля</legend>
+							<span class="forms__label-text">Поменять пароль </span>
+							<span class="forms__label-text">Оставьте поле пустым, если Вы не хотите меня пароль </span>
+							<br>
+
+							<label class="forms__label">
+								<span class="forms__label-text">Новый пароль</span>
+								<input type="password" class="forms__input">
+							</label>
+							<label>
+								<span class="forms__label-text">Новый пароль (подтверждение)</span>
+								<input type="password" class="forms__input">
+							</label>
+							
+						</fieldset>
 
 						<input type="submit" class="forms__submit" value="Отправить">
 
