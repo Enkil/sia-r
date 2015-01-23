@@ -60,6 +60,15 @@
 
 // typography
 
+.sub-font{
+	font-family: @font-family-orgname--big;
+	font-size: 14px;
+
+	&--fz12{
+		font-size: 12px;
+	}
+}
+
 .paragraph{
 	margin: 20px 0;
 }
@@ -73,6 +82,18 @@
 	&:hover{
 		color: #fff;
 		text-decoration: underline;
+	}
+
+	&--lh12{
+		line-height: 12px;
+		font-size: 10px;
+	}
+
+	&--w-o-hover{
+		&:hover{
+			color: @link-dark-bg__color;
+			text-decoration: none;			
+		}
 	}
 }
 
@@ -131,6 +152,7 @@
 	font-weight: bold;
 	font-size: 11px;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .h2-black{
@@ -152,10 +174,20 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	margin-bottom: 5px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	letter-spacing: 1px;
 }
 
 .h3{
 	font-size: 16px;
+}
+
+.fz12{
+	font-size: @fz12;
+	color: #393a42;
+	font-weight: normal;
+	line-height: 20px;	
 }
 
 .text{
@@ -165,11 +197,18 @@
 	line-height: 20px;
 }
 
+.text-12-18{
+	color: #393a42;
+	font-weight: normal;
+	font-size: @fz12;
+	line-height: @lh18;	
+}
+
 .text-dark-bg{
 	color: #fff;
 	font-weight: normal;
-	font-size: 11px;
-	line-height: 21px;
+	font-size: @text-dark-bg__fz;
+	line-height: @text-dark-bg__lh;
 
 	&--bold{
 		font-weight: bold;
@@ -220,14 +259,14 @@
 
 	&__attention{
 		font-size: 10px;
-		line-height: 16px;
+		line-height: 20px;
 		color: #666;
 		display: inline-block;
 		background-color: #f4f4fb;
-		padding-right: 10px;
-		padding-left: 5px;
+		padding-right: 12px;
+		padding-left: 7px;
 		margin-top: 15px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	&__input{
@@ -251,6 +290,10 @@
 		margin-bottom: 15px;
 		display: block;
 		overflow: hidden;
+
+		&--capcha{
+			margin-bottom: 20px;
+		}
 	}
 
 	&__label-text{
@@ -259,6 +302,7 @@
 		font-family: @font-family-orgname--big;
 		font-weight: bold;
 		display: block;
+		// margin-bottom: 5px;
 	}
 
 	&__sub-text{
@@ -292,6 +336,8 @@
 	&__capcha-img{
 		width: 150px;
 		height: 60px;
+		display: block;
+		margin-bottom: 15px;
 	}
 
 	&__submit{
@@ -322,6 +368,8 @@
 			line-height: 20px;
 			font-family: @font-family-orgname--big;
 			font-weight: bold;
+			display: inline-block;
+			padding: 0 10px;
 		}
 
 	}	
