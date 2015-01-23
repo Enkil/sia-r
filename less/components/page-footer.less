@@ -23,12 +23,14 @@
 		display: inline-block;
 
 		&:before{
-			content: "&#9679";
+			content: '\2022';
+			margin-right: 5px;
 			color: #7070a2;
 		}
 		
 		&:first-child:before{
 			content: " ";
+			margin-right: 0;
 		}	
 	}
 
