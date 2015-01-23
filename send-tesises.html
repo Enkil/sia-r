@@ -76,104 +76,43 @@
 			<main class="col-wide main">
 
 				<div class="page-lead"> <!-- Page leading text -->
-					<h2 class="h2-red">Профиль</h2>
+					<h2 class="h2-red">Отправка тезисов</h2>
 					<hr class="page-lead__hr">
 				</div>	
 				
 				<div class="page-content">
 					<p class="profile__welcome profile__welcome--centered">Здравствуйте, Иннокентий Константинович (a.iivanov)</p>
-					<p class="profile__welcome2">Используйте эту форму для изменения личной информации</p>
+					<p class="profile__welcome2">Используйте эту форму для отправки тезисов</p>
 				</div>
 
 				<div class="page-content"> <!-- Page content text -->
 
-					<p class="profile__login-lead">* Логин (изменить логин нельзя)</p>
-					<span class="profile__login">a.iivanov</span>
-
-					<form action="#"> <!-- Registration form -->
+					<form action="#"> <!-- Send tesis form -->
 
 						<label class="forms__label">
-							<span class="forms__label-text">Фамилия:</span>
-							<input type="text" required class="forms__input" value="Иванов">
-						</label>
-
-						<label class="forms__label">
-							<span class="forms__label-text">Имя:</span>
-							<input type="text" required class="forms__input" value="Иннокентий">
-						</label>		
-
-						<label class="forms__label">
-							<span class="forms__label-text">Отчество:</span>
-							<input type="text" required class="forms__input" value="Константинович">
-						</label>		
-
-
-						<label class="forms__label">
-							<span class="forms__label-text">Дата рождения:</span>
-
-							<select class="forms__input forms__input--date" required>
-								<option value="01">01</option>
-								<option value="02">02</option>
-							</select>
-
-							<select class="forms__input forms__input--date" required>
-								<option value="jan">январь</option>
-								<option value="feb">февраль</option>
-							</select>
-
-							<select class="forms__input forms__input--date" required>
-								<option value="01">1900</option>
-								<option value="02">1901</option>
-							</select>														
-
-						</label>
-
-						<label class="forms__label">
-							<span class="forms__label-text">Место работы:</span>
+							<span class="forms__label-text">Название конференции</span>
 							<input type="text" required class="forms__input">
 						</label>
 
 						<label class="forms__label">
-							<span class="forms__label-text">Занимаемая должность:</span>
+							<span class="forms__label-text">Название тезиса</span>
 							<input type="text" required class="forms__input">
-						</label>						
+						</label>	
 
 						<label class="forms__label">
-							<span class="forms__label-text">Адрес электронной почты (email):</span>
-							<input type="email" required class="forms__input" value="mail@mail.org">
-						</label>
+							<span class="forms__label-text">Комментарий к тезису</span>
+							<input type="textarea" required class="forms__input forms__input--textarea">
+						</label>							
 
 						<label class="forms__label">
-							<img src="img/default-avatar.jpg" alt="" class="forms__avatar">
-							<div class="forms__img-text">
-								<span class="forms__label-text">Фотография</span>
-								<span class="forms__sub-text">необязательно</span>
-								<p class="forms__sub-text-2">Не более 100kb. Изображение будет уменьшено до 100 x 100.</p>
-								<input type="file" class="forms__input">
-							</div>
-						</label>
+							<span class="forms__label-text">Сопровождающий документ</span>
+							<input type="file" class="forms__input">
+						</label>							
 
-						<label class="forms__label">
-							<img src="img/capcha.jpg" alt="" class="forms__capcha-img">
-							<span class="forms__label-text">Введите код с изображения:</span>
-						</label>
+						
 
-						<fieldset class="forms__fieldset">
-							<legend class="forms__fieldset-legend">Смена пароля</legend>
-							<span class="forms__label-text">Поменять пароль </span>
-							<span class="forms__label-text">Оставьте поле пустым, если Вы не хотите меня пароль </span>
-							<br>
 
-							<label class="forms__label">
-								<span class="forms__label-text">Новый пароль</span>
-								<input type="password" class="forms__input">
-							</label>
-							<label>
-								<span class="forms__label-text">Новый пароль (подтверждение)</span>
-								<input type="password" class="forms__input">
-							</label>
-							
-						</fieldset>
+
 
 						<input type="submit" class="forms__submit" value="Отправить">
 
@@ -184,11 +123,11 @@
 			</main>
 
 			<!-- SIDEBAR -->
-			<aside class="page-aside col-narrow">			
+			<aside class="page-aside col-narrow">	
 
 				<div class="as-send-tesis display-none"> <!-- send tesises -->
 					<a href="send-tesises.html" class="as-send-tesis__btn">Отправить тезисы</a>
-				</div>	
+				</div>						
 
 				<section class="as-conferences"> <!-- conferences -->
 					<h2 class="as-conferences__title">Ближайшие конференции</h2>
