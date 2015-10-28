@@ -1,0 +1,10 @@
+.conference__title {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.conference__text {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}

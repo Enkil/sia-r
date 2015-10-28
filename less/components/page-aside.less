@@ -1,0 +1,114 @@
+.page-aside{
+	background-color: @sidebar__bgc;
+}
+
+.as-send-tesis{
+	background-color: @send-tesis--bgc;
+	height: @send-tesis--height;
+	text-align: center;
+	position: relative;
+
+	&__btn{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+
+		display: inline-block;
+		color: @send-tesis__btn--color;
+		background-color: @send-tesis__btn--bgc;
+		border-top: @send-tesis__btn--brdrtop;
+		border-bottom: @send-tesis__btn--brdrbot;
+		text-decoration: none;
+		width: @send-tesis__btn--width;
+		height: @send-tesis__btn--height;
+		border-radius: @send-tesis__btn--br;
+		line-height: @send-tesis__btn--height;
+		box-shadow: @send-tesis__btn--bxshdw;
+		font-size: @fz12;
+		// line-height: @lh18;
+
+		&:hover{
+			background-color: @send-tesis__btn--bgc-hover;
+			border-top: @send-tesis__btn--brdrtop-hover;
+			border-bottom: @send-tesis__btn--brdrbot-hover;
+		}
+	}
+}
+
+.as-conferences{
+	margin: 30px;
+	margin-bottom: 60px;
+
+	&__title{
+		font-size: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		letter-spacing: 1px;
+	}
+
+
+	&__item{
+		margin: 25px 0;
+		list-style-type: none;
+	}
+
+	&__time{
+		font-size: 11px;
+		line-height: 18px;
+		color: #757582;
+		display: block;
+	}
+
+	&__preview{
+		text-decoration: none;
+		font-size: 12px;
+		line-height: 18px;
+		color: #5555ad;
+		display: block;
+		
+		&:hover{
+			color: #6767c1;
+			text-decoration: underline;
+		}
+		&:visited{
+			color: #7575a7;
+		}
+	}
+
+	&__btn{
+		color: #fff;
+		background-color: #b4c4cc;
+		text-decoration: none;
+		font-size: 11px;
+		line-height: 22px;
+		text-align: center;
+		width: 130px;
+		height: 22px;
+		border-radius: 2px;
+		display: block;
+
+		&:hover{
+			background-color: #97a4aa;
+		}
+	}
+}
+
+.as-banners{
+
+	&__item{
+		list-style-type: none;
+		display: block;
+		margin: 30px auto;
+		width: 210px;
+	}
+
+	&__img{
+		width: 100%;
+		height: auto;
+	}
+}

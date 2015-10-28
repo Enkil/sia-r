@@ -1,0 +1,67 @@
+.magazines-row {
+  background-color: #f6f6fc;
+  position: relative;
+}
+.magazines-row:last-child:after {
+  border-bottom: none;
+}
+.magazines-row:after {
+  content: '';
+  position: absolute;
+  width: 580px;
+  left: 20px;
+  bottom: 0px;
+  border-bottom: 1px solid #ccc;
+}
+.magazines-row__item {
+  width: 90px;
+  margin: 40px 0px 30px 30px;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  padding-right: 34px;
+  box-sizing: content-box;
+}
+.magazines-row__item:last-child {
+  border-right: none;
+}
+.magazines-row__m-hr {
+  color: #ccc;
+  border: none;
+  background-color: #ccc;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.magazines-row__img {
+  width: 90px;
+  height: 127px;
+}
+.magazines-row__m-text {
+  margin: 0 5px;
+  font-size: 10px;
+  line-height: 13px;
+}
+.magazines-row__m-title {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 15px;
+}
+.magazines-row__btn {
+  font-size: 9px;
+  text-align: center;
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  background-color: #93c83d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.magazines-row__btn:hover {
+  background-color: #ff9d2a;
+}

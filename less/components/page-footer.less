@@ -1,0 +1,54 @@
+.page-footer{
+
+	&__wrapper{
+		background-color: #303462;
+	}
+
+	&__bgc{ background-color: #393968; }
+
+	&__menu{
+		display: inline-block;
+		margin-left: 30px;
+	}
+
+	&__links{
+		
+		&--right{
+			float: right;
+			margin-right: 30px;
+		}
+	}
+
+	&__item{
+		display: inline-block;
+
+		&:before{
+			content: '\2022';
+			margin-right: 5px;
+			color: #7070a2;
+		}
+		
+		&:first-child:before{
+			content: " ";
+			margin-right: 0;
+		}	
+	}
+
+
+	&__link{
+		color: @link-dark-bg__color;
+		font-size: 13px;
+		text-decoration: none;
+		line-height: 60px;
+
+		&:hover{
+			color: #fff;
+			text-decoration: underline;
+		}
+
+		&--white{
+			color: #fff;
+			font-size: 13px;
+		}
+	}
+}

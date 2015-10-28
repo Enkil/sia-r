@@ -1,0 +1,74 @@
+ФОН:
+#393968 (верх) до #2b3257 (низ) - градиент шапки
+#ebf0f2 - фон страницы
+#ffffff - фон зоны контента
+#f6f8f9 - фон сайдбара 
+#e8eef1 - фон блока “отправить тезисы”
+#393968 - футер по ширине сайта
+#303462 - футер по ширине страницы
+
+
+КНОПКИ И ТАБЫ:
+#43437a - таб навигации, search button (height 31x + 4px borders, padding l/r: 25px)
+  border-top: 1px solid #4f4f85;
+  border-bottom: 3px solid #3b3b6e;
+
+#877ab7 - hover таб,
+  border-top: 1px solid #9487c1;
+  border-bottom: 3px solid #7d70ad;
+
+#ffffff - активный таб
+
+#4ca7a2 - search button hover
+  border-top: 1px solid #5bbab5;
+  border-bottom: 3px solid #56b3ae;
+
+#393968 - рамка для поля поиска
+  border-top: 1px solid 46467c;
+
+#4a59a8 - login button
+  border-top: 1px solid #596ac6;
+  border-bottom: 1px solid #1e285a;
+
+#5668c8 - login button hover
+  border-top: 1px solid #5770f2;
+  border-bottom: 1px solid #1e285a;
+
+#282e50 - фон Регистрация в РАСХИ (радиус 2px)
+  #5993bb - over фона Регистрация в РАСХИ
+
+#b4c4cc - фон Все конференции
+  #97a4aa - фон Все конференции over
+
+#93c83d - Отправить тезисы button (радиус 2px, тень 3px #d0dbe1 no blur)
+  border-top: 1px solid #a4e53b;
+  border-bottom: 1px solid #6bb22d;
+
+#ef6851 - Отправить тезисы hover (радиус 2px, тень 3px #d0dbe1 no blur)
+  border-top: 1px solid #ffad80;
+  border-bottom: 1px solid #d24c35;
+
+
+ТЕКСТ:
+13px/20px | 12px/18px
+Между параграфами половина строки
+#393a42 - основной текст сайта
+#000000 - жирные заголовки
+#757582 - серый текст
+#a55b65 - красноватый заголовок
+#5993bb - синеватый заголовок
+
+
+ССЫЛКИ:
+#ababe6 - сиреневый на тёмном
+  #ffffff + underline - hover
+
+#5555ad - сиреневый на светлом, основные ссылки
+  #6767c1 + underline - hover
+  #7575a7 - visited
+
+
+ФОРМЫ:
+#dadaf1 - логин и пасс поля
+  #ffffff - focus
+#ffffff - search field
